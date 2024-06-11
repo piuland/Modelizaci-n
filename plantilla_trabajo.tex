@@ -1,0 +1,256 @@
+\documentclass[12pt,reqno]{amsart}
+\usepackage{latexsym,amsmath,amsfonts,amscd,amssymb,color}
+\usepackage{graphics}
+
+\setlength{\oddsidemargin}{15pt} \setlength{\evensidemargin}{15pt}
+\setlength{\textwidth}{420pt} \setlength{\textheight}{630pt}
+\setlength{\topmargin}{0pt}
+
+\setlength{\parskip}{.15cm} \setlength{\baselineskip}{.5cm}
+%\renewcommand{\baselinestretch}{1.2}
+
+%\usepackage[T1]{fontenc}
+%\usepackage{avant}
+%\usepackage[cp1250]{inputenc}
+%\usepackage{amsmath,amssymb,amsthm}
+%\usepackage{caption}
+%\usepackage{geometry}
+%\usepackage{float}
+%
+%\usepackage{makeidx}
+%\usepackage[matrix,arrow,curve]{xy}
+%\usepackage{boxedminipage}
+%\usepackage{epic}
+%\usepackage{longtable}
+%\usepackage{ifthen}
+%\usepackage{tabularx}
+%\usepackage{parskip}
+%\usepackage{verbatim}
+%\usepackage{tikz-cd}
+
+\newcommand{\inc}{\hookrightarrow}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\x}{\times}
+\newcommand{\ox}{\otimes}
+\newcommand{\too}{\longrightarrow}
+\newcommand{\bd}{\partial}
+
+
+\newcommand{\cA}{\mathcal{A}}   %Abreviaciones para escribir letras tipo mathcal (caligr\'aficas)
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cF}{\mathcal{F}}
+
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\PP}{\mathbb P}   
+
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\SU}{\operatorname{SU}}
+\newcommand{\U}{\operatorname{U}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\OO}{\operatorname{O}}   
+\newcommand{\Sp}{\operatorname{Sp}} 
+\newcommand{\GL}{\operatorname{GL}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Diff}{Diff}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Ant}{Ant}
+\DeclareMathOperator{\End}{End}
+
+\renewcommand{\a}{\alpha}   %Abreviaciones de letras griegas para escribir m\'as r\'apido
+\renewcommand{\b}{\beta}
+\renewcommand{\d}{\delta}
+\newcommand{\g}{\gamma}
+\newcommand{\e}{\varepsilon}
+\newcommand{\eps}{\epsilon}
+\newcommand{\f}{\varphi}
+\newcommand{\h}{\theta}
+\renewcommand{\l}{\lambda}
+\renewcommand{\k}{\kappa}
+\newcommand{\s}{\sigma}
+\newcommand{\m}{\mu}
+\newcommand{\n}{\nu}
+\renewcommand{\o}{\omega}
+\newcommand{\p}{\phi}
+\newcommand{\q}{\psi}
+\renewcommand{\t}{\tau}
+\newcommand{\z}{\zeta}
+\newcommand{\G}{\Gamma}
+\renewcommand{\O}{\Omega}
+\renewcommand{\S}{\Sigma}
+\newcommand{\D}{\Delta}
+\renewcommand{\L}{\Lambda}
+\renewcommand{\P}{\Phi}
+\newcommand{\Q}{\Psi}
+\newcommand{\vp}{\varphi} 
+\renewcommand{\s}{\sigma} 
+
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\rId}{\mathrm{Id}} 
+
+\newcommand{\frj}{\mathfrak{j}} 
+
+
+
+
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+\newtheorem{theorem}{Teorema}   %Redefino estos comandos para que los ponga en espa\~nol.
+\newtheorem{proposition}[theorem]{Proposici\'on}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{definition}[theorem]{Definici\'on}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{note}[theorem]{Observaci\'on}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{remark}[theorem]{Observaci\'on}
+\newtheorem{conjecture}[theorem]{Conjetura}
+\newtheorem{question}[theorem]{Pregunta}
+
+
+\begin{document}
+
+\begin{center}
+\Large{\textbf{T\'itulo del trabajo}}
+\end{center}
+
+
+{\color{blue}
+
+\begin{itemize}
+\item Ver si las acciones de grupos en $X^4$ un $4$-orbifold suben a su resoluci\'on simpl\'ectica.
+
+\item Pensar c\'omo resolver $X^6$ tal que sus puntos de isotrop\'ia est\'an todos contenidos
+en un n\'umero $\le 2$ de divisores singulares.
+
+\item Caso de $X^{2n}$ c\'iclico.
+
+\item Caso de $X=M/\G$, donde $M$ es una variedad, $\G$ es un grupo resoluble con cocientes c\'iclicos
+es decir existe $\G_k \lhd \cdots \lhd \G_2 \lhd \G_1=\G$
+con $\G_{i+1}/\G_i$ un grupo c\'iclico.
+
+\item Entender la resoluci\'on de singularidades cociente c\'iclicas $\CC^n/\G$
+con $\G \cong \ZZ_m$. Primer paso, paper de N-P (singularidades aisladas).
+
+\item Mirar m\'as referencias de resoluci\'on de orbifolds.
+\end{itemize}
+
+\section{Lemas}
+
+%aquí pongo mis observaciones, que no se compilan en el pdf
+
+\begin{lemma}
+Let $\Psi: \RR^{2n} \to \RR^{2n}$ be a radial map of the form
+$\Psi(x)=f(|x|) x$, with $f:\RR \to [0,\infty)$ a smooth function.
+
+{\color{blue} En Espa\~nol: Sea $\Psi: \RR^{2n} \to \RR^{2n}$ una aplicaci\'on radial del tipo
+$\Psi(x)=f(|x|) x$, con $f:\RR \to [0,\infty)$ una función de clase infinito.}
+
+Let $\o$ be a symplectic form on $\RR^{2n}$ such that
+$\o(\cdot, \frj \cdot) \ge 0$ is $\frj$-positive.
+
+Then, $(\Psi^*\o) (\cdot, \frj \cdot)$ is $\frj$-semipositive
+if and only if $f(r)+f'(r) \ge 0$.
+\end{lemma}
+\begin{proof}
+Let $x \in \RR^{2n}$ and $r=|x|$.
+Note first that 
+\begin{align*}
+d_x \Psi(r \bd_r) & = \bd_t|_{t=0} \Psi((t+1)x)) \\
+& = \bd_t|_{t=0} f((t+1)r) \cdot (t+1)x=(f'(r) + f(r))x= (f'(r) + f(r))r \bd_r \, .
+\end{align*}
+Also, $d_x \Psi (v)= f(r) v$ for $v$ a vector tangent to the sphere,
+i.e. orthogonal to $\bd_r$. This is because $\Psi$ is the homothecy $y \mapsto f(r)y$ between the spheres of radius $r$ and radius $f(r) r$.
+
+Now take $u \in \RR^{2n}$ a tangent vector and write
+$$
+u=ar \bd_r + b r\frj (\bd_r) + cv
+$$
+with $v$ orthogonal to the plane $\langle \bd_r, \frj (\bd_r) \rangle$ generated by $\bd_r , \frj (\bd_r)$.
+Then we have
+\begin{align*}
+\frj (u)  & = ar  \frj \bd_r - br \bd_r + c \frj v \, ; \\
+d_x \Psi(u) &  = a(f'(r) + f(r)) r \bd_r + b r f(r) \frj (\bd_r) + cf(r) v \, ; \\
+d_x \Psi(\frj (u)) & = ar f(r) \frj (\bd_r) - b (f'(r)+f(r))r \bd_r + cf(r)\frj (v) \, ; \\
+J(d_x \Psi(u)) & = a(f'(r) + f(r)) r \frj (\bd_r)-br f(r) \bd_r + cf(r) \frj (v) \, .
+\end{align*}
+Hence
+\begin{align*}
+(\Psi^* \o)_x(u,\frj (u)) & =\o(d_x \Psi(u), d_x \Psi (\frj (u))) \\
+& = f(r)(f'(r)+f(r))r^2 (a^2+b^2)\o(\bd_r,\frj (\bd_r)) + c^2 f(r)^2 \o(v,\frj (v))
+\end{align*}
+where we have used that $v$ belongs to $\langle \bd_r, \frj (\bd_r) \rangle^{\o \perp}$, the symplectic orthogonal.
+\end{proof}
+}
+
+\section{Introducci\'on}
+
+En este trabajo vamos a hacer cosas
+
+\section{Preliminares}
+
+Aqu\'i vamos a fijar algunas notaciones etc.
+
+\section{Minimizaci\'on de longitudes y geod\'esicas}
+
+En esta secci\'on vamos a estudiar condiciones necesarias que debe cumplir una curva para ser la de m\'inima longitud de entre todas las curvas que unen dos puntos $p,q \in \RR^n$.
+
+\subsection{ Funcionales de energ\'ia y longitud.}
+
+Recordemos que una aplicación $\g:[a,b] \to \RR^n$ se dice que es \emph{de clase uno}, o $\cC^1$,
+si es derivable con derivada continua en $(a,b)$ y existen los l\'imites laterales
+$\lim_{t \to a^+} \g'(t)$, $\lim_{t \to b^-} \g'(t)$. En este caso denotamos
+$\g \in \cC^1([a,b], \RR^n)$.
+
+\medskip
+
+Para definir la longitud de una curva $\g$ no es realmente necesario que sea $\cC^1$ en todo su dominio $[a,b]$, 
+sino que basta con que $[a,b]$ se pueda subdividir en subintervalos donde sea $\cC^1$. En tal caso
+se dice que $\g$ es $\cC^1$ a trozos.
+
+\begin{definition}
+Dados dos puntos $p, q \in \RR^n$ definimos el \emph{espacio de caminos de $p$ a $q$}
+como el conjunto de todas las aplicaciones $\cC^1$ a trozos que unen ambos puntos, es decir
+$$
+\O_{p,q}=\{ \g: [a,b] \to \RR^n \text{ t.q. } \g(a)=p, \g(b)=q \}
+$$
+siendo $[a,b] \subset \RR$ un intervalo, y $\g$ una aplicaci\'on $\cC^1$ a trozos.
+\end{definition}
+
+\begin{definition}
+Definimos el funcional de energ\'ia como
+$\cE: \O_{p,q} \to \RR$ dado por 
+$$
+\cE(\g)= \frac{1}{2} \int_a^b |\g'(t)|^2 dt \, .
+$$
+Definimos el funcional de longitud como $\cL: \O_{p,q} \to \RR$ dado por 
+$$
+\cL(\g)= \int_a^b |\g'(t)| dt \, .
+$$
+\end{definition}
+
+
+\begin{proposition}
+Si una curva minimiza el funcional de energ\'ia $\cE$, entonces 
+
+\end{proposition}
+
+
+\end{document}
